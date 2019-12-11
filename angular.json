@@ -21,12 +21,16 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/images",
+              "src/assets/movies"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles/atenea.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/atenea.js"
+            ]
           },
           "configurations": {
             "production": {
