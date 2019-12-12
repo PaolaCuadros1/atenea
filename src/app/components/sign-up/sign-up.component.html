@@ -1,0 +1,33 @@
+<form #signUp="ngForm">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="firstName">Nombres</label>
+      <input type="text" class="form-control" id="firstName" name="firstName"  >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="LastName">Apellidos</label>
+      <input type="text" class="form-control" id="LastName" name="LastName"  >
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="email">Correo electronico</label>
+      <input type="email" class="form-control" id="email" name="email"  >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="password">Contraseña</label>
+      <input type="text" class="form-control" id="password" name="password"  >
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="password">Mis favoritos</label>
+      {{genders}}
+    </div>
+    <div class="form-group col-md-12">
+      <div *ngFor="let gender of genders">
+        <label for="country{{gender}}">{{gender}}</label>
+      </div>
+    </div>
+  </div>
+</form>
