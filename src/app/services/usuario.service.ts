@@ -53,4 +53,21 @@ export class UserService {
 
   }
 }
+  obtenerNombreUsuario(){
+    //En una variable llamada identidad estamos recogiendo los datos de inicio de sesión de nuestro usuario a partir
+    //de localStorage
+    let identidad = JSON.parse(localStorage.getItem('sesion'));
+
+    //Lo siguiente que debemos hacer es validar si localStorage está vacío o tiene datos, si ha registrado nombre, etc...
+    if(identidad != "undefined"){
+      //Si es diferente de indefinido, es decir, si existen datos, entonces esta identidad va a ser igual a la 
+      //variable que trae la sesión de localStorage
+      this.identidad = identidad;
+    }else{
+      this.identidad = null;
+    }
+    return this.identidad;
+  }
+
+}
 
