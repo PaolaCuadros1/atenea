@@ -4,7 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { UserService } from './services/usuario.service';
+
 import { AppComponent } from './app.component';
+import { LoginComponent } from './components/login/login.component';
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
@@ -13,7 +16,8 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +25,9 @@ const appRoutes: Routes = [
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
