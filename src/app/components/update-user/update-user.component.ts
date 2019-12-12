@@ -1,21 +1,40 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService} from '../../services/usuario.service'
 import { Usuario} from '../../model/usuario'
+import { Router, ActivatedRoute, Params } from '@angular/router';
+
 
 @Component({
   selector: 'app-update-user',
   templateUrl: './update-user.component.html',
   styleUrls: ['./update-user.component.css']
 })
+
 export class UpdateUserComponent implements OnInit {
 public usuarioActualizar=Usuario;
+public archivoSubir: File;
+public url: string;
 public identidad
   constructor(
-    private UserService:UserService
-  ) { }
+    private UserService:UserService,
+    private _router: Router,
+
+  ) { 
+    this.url = UserService.url
+  }
 
   ngOnInit() {
+    this.usuarioActualizar = JSON.parse(localStorage.getItem("sesion"));
+    this.identidad = this.UserService.obtenerNombreUsuario();
+
   }
+  
+  subirArchivo(fileInput: any) {
+    this.archivoSubir = <File>fileInput.target.files[0];//recoger archivos seleccionados en el input
+    // this.archivoSubir = <Array<File>>fileInput.target.files[0];
+
+  }
+
 
   actualizarUsuario(){
     this.UserService.actualizarUsuario(this.usuarioActualizar._id,this.usuarioActualizar).subscribe(
