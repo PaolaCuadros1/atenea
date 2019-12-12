@@ -52,7 +52,7 @@ export class UserService {
     ).pipe(map(res => res));
 
   }
-}
+
   obtenerNombreUsuario(){
     //En una variable llamada identidad estamos recogiendo los datos de inicio de sesión de nuestro usuario a partir
     //de localStorage

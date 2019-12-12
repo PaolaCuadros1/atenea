@@ -23,7 +23,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
     UpdateUserComponent,
     LoginComponent
   ],
