@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './services/usuario.service';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { UpdateUserComponent} from './components/update-user/update-user.component';
 import { LoginComponent } from './components/login/login.component';
 
@@ -20,6 +22,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    FooterComponent
     UpdateUserComponent,
     LoginComponent
   ],
