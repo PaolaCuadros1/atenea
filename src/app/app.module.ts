@@ -5,15 +5,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { UpdateUserComponent} from './components/update-user/update-user.component';
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
+  //{path: 'updateUser', component:UpdateUserComponent}
+
   //{path: 'main', component: MainComponent}, -> Ruta de ejemplo.
 ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UpdateUserComponent
+
   ],
   imports: [
     BrowserModule,

@@ -36,4 +36,21 @@ export class UserService {
     //al localhost/4000/api/loginUsuario
   }
 
+
+  actualizarUsuario(id, usuarioActualizar) {
+    let params = JSON.stringify(usuarioActualizar);
+    let options = {
+      headers: new HttpHeaders(
+        {
+          'Content-Type': 'application/json'
+        })
+    };
+    return this._http.put(
+      this.url + 'actualizar-usuario/' + id,
+      params,
+      options
+    ).pipe(map(res => res));
+
+  }
 }
+
