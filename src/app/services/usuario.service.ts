@@ -36,5 +36,4 @@ export class UserService {
     //al localhost/4000/api/loginUsuario
   }
 
-
 }
