@@ -5,7 +5,7 @@
   }
   
   body {
-    background-image: url('/assets/images/fondo2.jpg');
+    background-image: url('../assets/images/fondo1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Quicksand', sans-serif;
@@ -95,10 +95,11 @@
   }
   
   .black-card{
-    background-color: black;
+    background-color:  rgb(1, 1, 59,0.6);
     color: white;
     text-align: center;
   }
+ 
   
   .info-client{
     margin-top: 5%;
@@ -106,6 +107,10 @@
   
   .form-group-1{
    color: white !important;
+  }
+  .form-control{
+    width: 60% !important;
+    margin-left: 80px !important;
   }
   
   .form-control-1{
