@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { RegisterSongComponent } from './components/register-song/register-song.component';
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
@@ -13,7 +14,8 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegisterSongComponent
   ],
   imports: [
     BrowserModule,
