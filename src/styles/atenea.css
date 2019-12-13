@@ -1,4 +1,79 @@
 * {
+
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+.menu {
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+}
+.logo {
+  float: left;
+}
+
+.name-menu {
+  display: inline-flex;
+  list-style: none;
+  margin-top: 35px;
+  margin-left: 20px;
+  color: #f2dcf2;
+}
+.iniciar {
+  display: flex;
+  float: center;
+}
+.redes {
+  display: block;
+}
+
+.fa-twitter-square {
+  color: #f2dcf2 !important;
+  width: 100px;
+  height: 100px;
+}
+
+.fa-instagram {
+  color: #f2dcf2 !important;
+}
+
+.fa-facebook {
+  color: #f2dcf2 !important;
+}
+
+.container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.container1 {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.container2 {
+  width: 29%;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.redes {
+  display: inline-flex;
+  list-style: none;
+  margin-top: 35px;
+  margin-left: 180px;
+}
+.twitter {
+  margin-left: 30px;
+}
+.facebook {
+  margin-left: 15px;
+}
+.instagram {
+  margin-left: 15px;
+
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
