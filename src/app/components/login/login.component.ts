@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   constructor(
     private usuarioService: UserService
   ) { 
-    this.login = new Usuario('', '', '', '', '', 'ROLE_USER', '');
+    this.login = new Usuario('', '', '', '', '', [], 'ROLE_USER', '');
    }
 
   ngOnInit() {
@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
           this.login.apellido,
           this.login.correo,
           this.login.contrasena,
+          this.login.generos,
           this.login.rol,
           this.login.imagen
         )
