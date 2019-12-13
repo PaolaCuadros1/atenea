@@ -1,0 +1,238 @@
+/* primer parrafo descripción sobre nosotras */
+
+/* 
+font-family: 'Quicksand', sans-serif; */
+bac  #BBBBBB
+
+/* MENU */
+
+/* PARRAFO SOBRE NOSOTRAS */
+
+.titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+
+}
+.content1 {
+    width: 60%;
+    margin: auto;
+    
+}
+
+.content-item1 {
+    /*width: 90%;
+    max-width: 800px;
+    padding: 50px;*/
+    margin: auto;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    align-items: center;
+}
+.content-item1 h3 {
+    text-align: center;
+    font-family:  'Quicksand', sans-serif;
+    margin: 30px;
+    font-size: 50px;
+    color: #F2DCF2; /* //este a lila */
+    letter-spacing: 5px;
+}
+
+
+.paboutus/* , .container> h2 p */ {
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+/*     margin: 5% 25% 0% 25%;  */
+    
+}
+
+
+
+
+
+
+/* Segunda sección, cajas (circulos y texto) */
+
+h3 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+    margin: 30px;
+    font-size: 30px;
+    color: #F2F2F2;
+    letter-spacing: 5px;
+}
+
+.equipo {
+  
+    color: rgb(136, 118, 118);  /* letras de cuadros de euqipo */
+  
+    /* esto es lo que tiene que ver con la grid */
+    display: grid;
+    grid-gap: 60px;
+    padding: 90px;
+    font-family: 'Quicksand', sans-serif;
+    
+   
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows:minmax(200px,auto) minmax(200px,auto); */
+    grid-template-rows: auto;
+   font-size: 20px;
+  text-align: center; 
+    grid-template-areas: "header header header" "img1  img2  img3" "img4  img5  img6" "img7  img8  img9" "img10  img11  img12";
+    align-items: center; 
+}
+
+.img-content {
+    width: 100%;
+}
+.headerG {
+    grid-area: header;
+    background-color: #BC52D9;
+}
+
+.img1 {
+
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.img7 {
+    grid-area: img7;
+}
+
+.img8 {
+    grid-area: img8;
+}
+
+.img9 {
+    grid-area: img9;
+}
+
+.img10 {
+    grid-area: img10;
+}
+
+.img11 {
+    grid-area: img11;
+}
+
+.img12 {
+    grid-area: img12;
+}
+
+.equipo img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.equipo h3 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    
+    margin: 30px;
+    font-size: 50px;
+    color: #F2F2F2;
+    letter-spacing: 5px;
+}
+
+/* columnas */
+
+.column {
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+
+/* responsive, los muestra uno debajo del otro */
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+/* Add some shadows to create a card effect */
+
+.card {
+
+    box-shadow: 0 4px 8px 0 green (0, 0, 0, 0.2);
+}
+
+
+/* Some left and right padding inside the container */
+
+.container {
+    padding: 0 16px;
+     box-shadow: 0 4px 8px 0 green (0, 0, 0, 0.2);
+}
+
+
+/* Clear floats */
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    
+    font-size: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+/* .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555; */
+/* } */
+
+
+/* .container p{
+    margin:10px 50px;
+    text-align: justify;
+    display: flex;
+    align-items:flex-start;
+} 
+ */
+/* EL FOOTER */
+
+
