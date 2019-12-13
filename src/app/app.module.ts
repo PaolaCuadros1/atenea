@@ -19,7 +19,7 @@ import { LoginComponent } from './components/login/login.component';
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
   //{path: 'updateUser', component:UpdateUserComponent}
-
+{path: 'aboutus', component:AboutusComponent}  //acá agregué la ruta
   //{path: 'main', component: MainComponent}, -> Ruta de ejemplo.
 ];
 

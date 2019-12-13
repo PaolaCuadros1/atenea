@@ -65,7 +65,7 @@ h3 {
 
 .equipo {
   
-    color: rgb(136, 118, 118);  /* letras de cuadros de euqipo */
+    color: rgb(248, 245, 245);  /* letras de cuadros de euqipo */
   
     /* esto es lo que tiene que ver con la grid */
     display: grid;
