@@ -7,32 +7,36 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './services/usuario.service';
 
 import { AppComponent } from './app.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { RegisterSongComponent } from './components/register-song/register-song.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { UpdateUserComponent} from './components/update-user/update-user.component';
+//import { UpdateUserComponent} from './components/update-user/update-user.component';
 import { LoginComponent } from './components/login/login.component';
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
-  //{path: 'updateUser', component:UpdateUserComponent}
-
+  { path: '', component: HomeComponent },
+  { path: 'sign-up', component: SignUpComponent },
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'login', component: LoginComponent }
   //{path: 'main', component: MainComponent}, -> Ruta de ejemplo.
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
+    SignUpComponent,
     MenuComponent,
     RedesComponent,
     RegisterSongComponent,
     AboutusComponent,
     HomeComponent,
     FooterComponent,
-    UpdateUserComponent,
+    //UpdateUserComponent,
     LoginComponent
   ],
   imports: [

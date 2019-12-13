@@ -6,6 +6,7 @@ export class Usuario {
         public apellido: String,
         public correo: String,
         public contrasena: String,
+        public generos: Array<String>,
         public rol: String,
         public imagen: String
       
