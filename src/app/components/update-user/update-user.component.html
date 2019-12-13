@@ -1,57 +1,60 @@
 <div class="container">
     <div class="mx-auto" style="width: 40%;">
-    <div class="card black-card">
-    <div class="card-body">
-    <form class="" #formularioActualizar="ngForm" (ngSubmit)="actualizarUsuario()">
-        <div>
-            <div class="form-group form-group-1 col-md-6" >
-                <label for="nombre">Nombres</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombres"
-                 required #nombre="ngModel" name="nombre" [(ngModel)]="usuarioActualizar.nombre">
+      <div class="card black-card">
+        <div class="card-body">
+          <h4 class="card-title">Actualiza tus datos</h4>
 
-            <div class="form-group form-group-1 col-md-6">
-                <label for="apellido">Apellidos</label>
-                <input type="text" name="apellido" id="Apellidos" placeholder="Apellidos"
-                 required #apellido="ngModel" name="apellido" [(ngModel)]="usuarioActualizar.apellido">
+<form class="" #formularioActualizar="ngForm" (ngSubmit)="actualizarUsuario()">
+    <div>
+        <div >
+            <div class="form-group">
+              <!--<label for="nombre">Nombres</label>-->
+              <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombres" required #nombre="ngModel" name="nombre"
+              [(ngModel)]="usuarioActualizar.nombre">
+            </div>
+           
+
+            <div class="form-group">
+                <!--<label for="apellido">Apellidos</label>-->
+                <input type="text" class="form-control" name="apellido" id="Apellidos" placeholder="Apellidos" required #apellido="ngModel"
+                    name="apellido" [(ngModel)]="usuarioActualizar.apellido">
 
             </div>
         </div>
 
         <div>
-            <div class="form-group form-group-1 col-md-6">
-                 <label for="correo">Email</label>
-                 <input type="correo" name="correo" id="correo" placeholder="correo"
-                     required #correo="ngModel" name="correo" [(ngModel)]="usuarioActualizar.correo">
-    
+            <div class="form-group">
+                <!--<label for="correo">Email</label>-->
+                <input type="correo" class="form-control" name="correo" id="correo" placeholder="correo" required #correo="ngModel"
+                    name="correo" [(ngModel)]="usuarioActualizar.correo">
+
             </div>
-            <div class="form-group form-group-1 col-md-6">
-                 <label for="contrasena">Contraseña</label>
-                 <input type="contrasena" name="contrasena" id="contrasena" placeholder="Contraseña"
-                     required #contrasena="ngModel" name="contrasena" [(ngModel)]="usuarioActualizar.contrasena">
-    
+            <div class="form-group">
+                <!--<label for="contrasena">Contraseña</label>-->
+                <input type="contrasena" class="form-control" name="contrasena" id="contrasena" placeholder="Contraseña" required
+                    #contrasena="ngModel" name="contrasena" [(ngModel)]="usuarioActualizar.contrasena">
+
             </div>
+        </div>
+
+        <div>
+            <div class="form-group">
+               <label for="imagen"> Imagen </label>
+                <input type="file" class="form-control-file" id="imagen" accept="image/*" placeholder="Subir imagen"
+                    required (change)="subirArchivo($event)">
+            </div>
+            <div class="form-group"><img
+                    src="{{ url + 'obtener-imagen-usuario/' + identidad.imagen}}" name="mostrarImagen"
+                    id="mostrarImagen" width="150" height="150" />
             </div>
 
-            <div>
-                <div class="form-group form-group-1 col-md-6">
-                  <label for="imagen"> Imagen </label>
-                  <input type="file" class="form-control-file" id="imagen" accept="image/*" placeholder="Subir imagen" required 
-                  (change)="subirArchivo($event)">
-                </div>
-                <div class="form-group form-group-1 col-md-6"><img src="{{ url + 'obtener-imagen-usuario/' + identidad.imagen}}" name="mostrarImagen" id="mostrarImagen" width="150" height="150" />
-                </div>
-    
-          
-              </div>
 
-            <button class="btn  boton" type="submit"> Actualizar </button>
+        </div>
 
-
-    </form>
+        <button class="btn  boton" type="submit"> Actualizar </button>
+    </div>
+</form>
 </div>
-<br>
-<br>
 </div>
-<br>
 </div>
 </div>
