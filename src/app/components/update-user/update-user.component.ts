@@ -11,7 +11,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 
 export class UpdateUserComponent implements OnInit {
-public usuarioActualizar=Usuario;
+public usuarioActualizar:Usuario;
 public archivoSubir: File;
 public url: string;
 public identidad
@@ -41,13 +41,13 @@ public identidad
       (response:any)=>{
         if(response.usuario){
           // this.actualizacionCorrecta = "Datos actualizados correctamente";
-          swal("", `Tus datos han sido actualizados correctamente!!`, "success");
+      /*     swal("", `Tus datos han sido actualizados correctamente!!`, "success"); */
           //alert(`Tus datos han sido actualizados correctamente!!`)
           localStorage.setItem("sesion",JSON.stringify(this.usuarioActualizar));
           this.identidad = this.UserService.obtenerNombreUsuario();
 
           if(!this.archivoSubir && this.identidad.imagen == ''){
-            swal("Oye!!", `No ingresaste ninguna imagen`, "info");
+         /*    swal("Oye!!", `No ingresaste ninguna imagen`, "info"); */
             //alert('No hay ninguna img')
           }else{
             //alert(`tu imagen es ${this.archivoSubir.name}`);
