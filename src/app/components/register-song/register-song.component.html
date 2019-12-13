@@ -1,0 +1,35 @@
+<form #formularioCancion="ngForm" class="form-in-line" (ngSubmit)="registrarCancion()">
+    <div class="form-row">
+        <div>
+            <div class="form-group col-md-6">
+                <label class="name-form" for="filmName">Nombre de pelicula </label>
+                <input type="text" class="form-control " id="firstName" placeholder="Nombre de pelicula" required #nombrePeli="ngModel" name="nombrePeli" [(ngModel)]="usuarioRegistro.nombre">
+            </div>
+            <div class="form-group  col-md-6">
+                <label class="name-form" for="duration"> Duración</label>
+                <input type="text" class="form-control  " id="duration" placeholder=" Duración" required #duracion="ngModel" name="duracion" [(ngModel)]="usuarioRegistro.duracion">
+            </div>
+            <div class="form-group col-md-6">
+                <label class="name-form" for="">Genero</label>
+                <input type="text" class="form-control  " id="Genre" placeholder="Genero" required #correo="ngModel" name="genero" [(ngModel)]="usuarioRegistro.correo">
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group  ">
+            <label class="name-form" for="duration"> Duración</label>
+            <input type="text" class="form-control  " id="duration" placeholder=" Duración" required #duracion="ngModel" name="duracion" [(ngModel)]="usuarioRegistro.duracion">
+        </div>
+        <div><br>
+            <br></div>
+
+        <div class="form-group">
+            <label class="name-form" for="">Genero</label>
+            <input type="text" class="form-control  " id="Genre" placeholder="Genero" required #correo="ngModel" name="genero" [(ngModel)]="usuarioRegistro.correo">
+        </div>
+    </div>
+
+    <br><br>
+    <button class="boton" type="submit">Subir Pelicula</button>
+    <!--<a class="boton" id="boton-form" style="color: white !important;;" routerLink="/account">Crear usuario</a>-->
+</form>
