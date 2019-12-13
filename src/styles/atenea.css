@@ -183,7 +183,7 @@
   .form-group-1{
    color: white !important;
   }
-  .form-control{
+  .form-control-1{
     width: 60% !important;
     margin-left: 80px !important;
   }
@@ -277,4 +277,12 @@
 .legal {
     overflow: auto;
     text-align: right;
+}
+
+.labels-forms{
+  color: white;
+}
+
+.input-form{
+  margin-right: 3%;
 }
