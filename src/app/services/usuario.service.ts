@@ -20,6 +20,21 @@ export class UserService {
     private _http: HttpClient //Guarda el objeto httmCliente para poder tener acceso a los métodos get, post, put y delete
   ) { }
 
+  registro(usuarioNuevo) {
+    let params = JSON.stringify(usuarioNuevo);
+    console.log("Llegooooo");
+    console.log(params)
+    let options = {
+      headers: new HttpHeaders(
+        { 'Content-Type': 'application/json' })
+    };
+    return this._http.post(
+      this.url + "registro",
+      params,
+      options
+    ).pipe(map(res => res));
+  }
+
 
   //Vamos a crear el método de IniciarSesión
   iniciarSesion(usuarioLogeado){
