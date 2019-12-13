@@ -1,0 +1,38 @@
+<div class="container">
+    <form class="" #formularioActualizar="ngForm" (ngSubmit)="actualizarUsuario()">
+        <div>
+            <div>
+                <label for="nombre">Nombres</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombres"
+                 required #nombre="ngModel" name="nombre" [(ngModel)]="usuarioActualizar.nombre">
+
+            </div>
+            <div>
+                <label for="apellido">Apellidos</label>
+                <input type="text" name="apellido" id="Apellidos" placeholder="Apellidos"
+                 required #apellido="ngModel" name="apellido" [(ngModel)]="usuarioActualizar.apellido">
+
+            </div>
+        </div>
+
+        <div>
+            <div>
+                 <label for="correo">Email</label>
+                 <input type="correo" name="correo" id="correo" placeholder="correo"
+                     required #correo="ngModel" name="correo" [(ngModel)]="usuarioActualizar.correo">
+    
+            </div>
+            <div>
+                 <label for="contrasena">Contraseña</label>
+                 <input type="contrasena" name="contrasena" id="contrasena" placeholder="Contraseña"
+                     required #contrasena="ngModel" name="contrasena" [(ngModel)]="usuarioActualizar.contrasena">
+    
+            </div>
+            </div>
+
+            <button class="boton" type="submit"> Actualizar </button>
+
+
+    </form>
+
+</div>

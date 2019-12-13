@@ -4,18 +4,32 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { UserService } from './services/usuario.service';
+
 import { AppComponent } from './app.component';
 import { RegisterSongComponent } from './components/register-song/register-song.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { UpdateUserComponent} from './components/update-user/update-user.component';
+import { LoginComponent } from './components/login/login.component';
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
+  //{path: 'updateUser', component:UpdateUserComponent}
+
   //{path: 'main', component: MainComponent}, -> Ruta de ejemplo.
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterSongComponent
+    RegisterSongComponent,
+    AboutusComponent,
+    HomeComponent,
+    FooterComponent,
+    UpdateUserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +37,9 @@ const appRoutes: Routes = [
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
