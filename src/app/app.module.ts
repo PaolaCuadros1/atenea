@@ -19,8 +19,10 @@ import { LoginComponent } from './components/login/login.component';
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
-  {path: 'sign-up', component:SignUpComponent},
-{path: 'aboutus', component:AboutusComponent}
+  { path: '', component: HomeComponent },
+  { path: 'sign-up', component: SignUpComponent },
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'login', component: LoginComponent }
   //{path: 'main', component: MainComponent}, -> Ruta de ejemplo.
 ];
 
