@@ -52,6 +52,14 @@ export class UserService {
     ).pipe(map(res => res));
 
   }
+  cargarImagenUsuario(file: File, id) {
+    var formData = new FormData();
+    formData.append('imagen', file);
+    return this._http.post(
+      this.url + "subir-imagen-usuario/" + id,
+      formData
+    ).pipe(map(res => res));
+  }
 
   obtenerNombreUsuario(){
     //En una variable llamada identidad estamos recogiendo los datos de inicio de sesión de nuestro usuario a partir
