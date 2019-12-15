@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../../model/usuario';
 import { UserService } from '../../services/usuario.service';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -13,6 +14,7 @@ export class SignUpComponent implements OnInit {
   public usuarioRegistro: Usuario;
   constructor(
     private usuarioService : UserService,
+    private _router: Router
   ) {
     let allGenders = [ 'Romance', 'Comedia', 'Drama', 'Anime', 'Acción', 'Documentales'];
     this.genders = allGenders;
@@ -30,14 +32,10 @@ export class SignUpComponent implements OnInit {
 
         if(!this.usuarioRegistro._id){
           alert("Error al registrarse");
-          // this.registroCorrecto = "El registro es correcto te puedes loguear con el email "+this.usuario.correo;
-
         }else{
-          //alert(`Registro exitoso!!, ingrese con ${this.usuarioRegistro.correo}`);
           alert(`Por favor, ingresa con ${this.usuarioRegistro.correo}`);
-          // this.registroCorrecto = "no se ha realizado el registro del usuario, consulte con soporte ";
-
           this.usuarioRegistro = new Usuario('', '', '', '', '', [], '', '');
+          this._router.navigate(['/login']) // wait!!
         }
       },
       error => {
