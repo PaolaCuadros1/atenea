@@ -300,3 +300,9 @@
   display: none;
   font-weight: bold;
 }
+
+.titles-table > th{
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
