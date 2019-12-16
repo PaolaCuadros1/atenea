@@ -19,6 +19,7 @@ import { UpdateUserComponent} from './components/update-user/update-user.compone
 import { LoginComponent } from './components/login/login.component';
 import { UserAcountComponent } from './components/user-acount/user-acount.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
+import { LoginAdminComponent } from './components/login-admin/login-admin.component';
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'updateUser', component: UpdateUserComponent },
   { path: 'userAcount', component: UserAcountComponent },
-  { path: 'movieList', component: MovieListComponent }
+  { path: 'movieList', component: MovieListComponent },
+  { path: 'login-admin', component: LoginAdminComponent },
 
   //{path: 'main', component: MainComponent}, -> Ruta de ejemplo.
 ];
@@ -46,7 +48,8 @@ const appRoutes: Routes = [
     UpdateUserComponent,
     LoginComponent,
     UserAcountComponent,
-    MovieListComponent
+    MovieListComponent,
+    LoginAdminComponent
   ],
   imports: [
     BrowserModule,
