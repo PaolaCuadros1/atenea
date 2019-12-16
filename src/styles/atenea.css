@@ -310,18 +310,29 @@ a {
     text-align: left;
     float: left;
     cursor: pointer;
-    width: 70%;
-    /* Nueva línea */
+    width: 33.3%; /* Nueva línea */
+   /*  padding: 0px; */
+
 }
 
 .legal {
-    line-height: 48px;
+   line-height: 48px;
+    overflow: auto;
+    text-align: center;
+    width: 33.3%;  /* Nueva línea */
+} 
+ .col {
+  float: left;
+
+} 
+.login-admin {
+  line-height: 48px;
     overflow: auto;
     text-align: right;
-    width: 30%;
+
+    width: 33.3%;
     /* Nueva línea */
 }
-
 .labels-forms {
   color: white;
 }
