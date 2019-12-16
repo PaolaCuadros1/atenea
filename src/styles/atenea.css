@@ -276,12 +276,14 @@
   }
 /* Fin nueva línea */
 .about {
+    line-height: 48px;
     text-align: left;
     float: left;
     cursor: pointer;
     width: 70%; /* Nueva línea */
 }
 .legal {
+    line-height: 48px;
     overflow: auto;
     text-align: right;
     width: 30%; /* Nueva línea */
