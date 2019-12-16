@@ -306,3 +306,32 @@
   font-size: 18px;
   font-weight: bold;
 }
+.genero1{
+  background-color:  #bc52d9;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.genero2{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.genero1 h3{
+  padding-left: 10px;
+}
+
+.genero2 h3{
+  padding-left: 10px;
+  color: #f2dcf2;
+}
+
+
+.containerb{
+  width: 100%;
+}
+
+.containerb h2{
+  color:white;
+  text-align: center;
+}
