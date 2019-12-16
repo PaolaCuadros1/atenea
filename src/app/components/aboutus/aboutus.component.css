@@ -42,12 +42,20 @@ bac  #BBBBBB
     text-align: left;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
+    color: #f2dcf2;
+    width: 60%;
+    margin-left: 50px;
 /*     margin: 5% 25% 0% 25%;  */
     
 }
 
 
+.logonos{
+display: flex;
+/* margin-top: 50px; */
+/* margin-right: 40px; */
 
+}
 
 
 
@@ -108,8 +116,15 @@ h3 {
     grid-area: img4;
 }
 
+.img4 img{
+    object-fit: cover;
+}
+
 .img5 {
     grid-area: img5;
+}
+.img5 img{
+    object-fit: cover;
 }
 
 .img6 {
@@ -119,11 +134,15 @@ h3 {
 .img7 {
     grid-area: img7;
 }
-
+.img7 img{
+    object-fit: cover;
+}
 .img8 {
     grid-area: img8;
 }
-
+.img8 img{
+    object-fit: cover;
+}
 .img9 {
     grid-area: img9;
 }
