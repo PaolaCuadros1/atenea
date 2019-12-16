@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { UserService } from './services/usuario.service';
+// importar servicio peliculas
+import {MovieService} from './services/movie.service';
 
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
@@ -16,6 +18,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { UpdateUserComponent} from './components/update-user/update-user.component';
 import { LoginComponent } from './components/login/login.component';
+
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
@@ -48,7 +51,8 @@ const appRoutes: Routes = [
     HttpClientModule
   ],
   providers: [
-    UserService
+    UserService,
+    MovieService
   ],
   bootstrap: [AppComponent]
 })
