@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
         //Vamos a inidicarle al sistema que cuando el usuario inicie sesión lo lleve directamente a su cuenta
         //Para eso creamos un manejador de ruta que redireccione al usuario a la cuenta una vez haya iniciado
         //sesión correctamente
-        //this._router.navigate(['/account']);
+        //this._router.navigate(['/userAcount']);
       }else{
         alert("Usuario no identificado"); //Cambios Cris
         this._router.routeReuseStrategy.shouldReuseRoute = () => false;
