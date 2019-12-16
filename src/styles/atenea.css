@@ -1,5 +1,5 @@
-@import "./../assets/materialize/css/materialize.min.css";
-@import "./../assets/materialize/css/materialize.css";
+/*@import "./../assets/materialize/css/materialize.min.css";
+@import "./../assets/materialize/css/materialize.css";*/
 
 * {
 
@@ -323,7 +323,7 @@
   box-shadow: 5px 5px 15px #000;
 }*/
 
-.user-acount {
+/*.user-acount {
 vertical-align: middle;
 margin-left: auto;
 margin-right: auto;
@@ -464,7 +464,7 @@ width: 80%;
     margin-bottom:20px;
     padding: none;
     border:none;
-  }
+  }*/
 
   /* FIN ESTILOS USER ACOUNT*/
 
