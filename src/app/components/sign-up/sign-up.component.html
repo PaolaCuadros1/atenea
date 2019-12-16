@@ -1,62 +1,60 @@
-
 <div class="contenedor1">
-<div class="container">
-  
-  <div class="mx-auto" style="width: 80%;">
+  <div class="container">
     <div class="mx-auto" style="width: 80%;">
-      <div class="card black-card">
-        <div class="card-body">
-          <h4 class="card-title">Registrate!</h4>
-          <form #signUp="ngForm" (ngSubmit)="registrarUsuario()">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="nombre" class="labels-forms">Nombres</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" #nombre="ngModel"
-                  onchange="validateEmptyData()" [(ngModel)]="usuarioRegistro.nombre">
+      <div class="mx-auto" style="width: 80%;">
+        <div class="card black-card">
+          <div class="card-body">
+            <h4 class="card-title">Registrate!</h4>
+            <form #signUp="ngForm" (ngSubmit)="registrarUsuario()">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="nombre" class="labels-forms">Nombres</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" #nombre="ngModel"
+                    onchange="validateEmptyData()" [(ngModel)]="usuarioRegistro.nombre">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="LastName" class="labels-forms">Apellidos</label>
+                  <input type="text" class="form-control" id="apellido" name="apellido" #apellido="ngModel"
+                    onchange="validateEmptyData()" [(ngModel)]="usuarioRegistro.apellido">
+                </div>
               </div>
-              <div class="form-group col-md-6">
-                <label for="LastName" class="labels-forms">Apellidos</label>
-                <input type="text" class="form-control" id="apellido" name="apellido" #apellido="ngModel"
-                  onchange="validateEmptyData()" [(ngModel)]="usuarioRegistro.apellido">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="email" class="labels-forms">Correo electronico</label>
+                  <input type="email" class="form-control" id="correo" name="correo" #correo="ngModel"
+                    onchange="validateEmptyData()" [(ngModel)]="usuarioRegistro.correo">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="password" class="labels-forms">Contraseña</label>
+                  <input type="password" class="form-control" id="contrasena" name="contrasena" #contrasena="ngModel"
+                    onchange="validateEmptyData()" [(ngModel)]="usuarioRegistro.contrasena">
+                </div>
               </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="email" class="labels-forms">Correo electronico</label>
-                <input type="email" class="form-control" id="correo" name="correo" #correo="ngModel"
-                  onchange="validateEmptyData()" [(ngModel)]="usuarioRegistro.correo">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="password" class="labels-forms">Contraseña</label>
-                <input type="password" class="form-control" id="contrasena" name="contrasena" #contrasena="ngModel"
-                  onchange="validateEmptyData()" [(ngModel)]="usuarioRegistro.contrasena">
-              </div>
-            </div>
-            <div class="form-row">
-              <h5 class="card-title"><b>Seleccionar tus generos favoritos!</b></h5>
-              <div class="form-group col-md-12" style="margin-left: 10%;">
-                <div class="d-flex align-content-between flex-wrap">
-                  <div *ngFor="let gender of genders; let i = index;"
-                    style="width: 30% !important; text-align: justify;">
-                    <div class="p-6 bd-highlight">
-                      <input type="checkbox" name="generos" class="input-form" value="{{gender}}"
-                        onchange="validateEmptyData()" (click)="saveGenders($event, gender)">
-                      <label for="generos{{gender}}" class="labels-forms">{{gender}}</label>
+              <div class="form-row">
+                <h5 class="card-title"><b>Seleccionar tus generos favoritos!</b></h5>
+                <div class="form-group col-md-12" style="margin-left: 10%;">
+                  <div class="d-flex align-content-between flex-wrap">
+                    <div *ngFor="let gender of genders; let i = index;"
+                      style="width: 30% !important; text-align: justify;">
+                      <div class="p-6 bd-highlight">
+                        <input type="checkbox" name="generos" class="input-form" value="{{gender}}"
+                          onchange="validateEmptyData()" (click)="saveGenders($event, gender)">
+                        <label for="generos{{gender}}" class="labels-forms">{{gender}}</label>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-12" style="text-align: center;">
-                <button id="saveData" type="button" class="btn boton" onclick="validateEmptyData()">Guardar</button>
-                <p class="error"> <i class="fas fa-info-circle"></i> <span class="msg"></span></p>
+              <div class="form-row">
+                <div class="form-group col-md-12" style="text-align: center;">
+                  <button id="saveData" type="button" class="btn boton" onclick="validateEmptyData()">Guardar</button>
+                  <p class="error"> <i class="fas fa-info-circle"></i> <span class="msg"></span></p>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
+      <br><br><br>
     </div>
-    <br><br><br>
-  </div>
   </div>
