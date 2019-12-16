@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../../model/usuario';
-import { UserService } from '../../services/usuario.service'
+import { UserService } from '../../services/usuario.service';
+import { Router, ActivatedRoute, Params } from '@angular/router'; //Cambio Cris
 
 @Component({
   selector: 'app-login',
@@ -13,6 +14,7 @@ export class LoginComponent implements OnInit {
   public login: Usuario;
 
   constructor(
+    private _router: Router, //Cambio Cris
     private usuarioService: UserService
   ) { 
     this.login = new Usuario('', '', '', '', '', [], 'ROLE_USER', '');
@@ -51,7 +53,10 @@ export class LoginComponent implements OnInit {
         //sesión correctamente
         //this._router.navigate(['/account']);
       }else{
-        alert("Usuario no identificado");
+        alert("Usuario no identificado"); //Cambios Cris
+        this._router.routeReuseStrategy.shouldReuseRoute = () => false;
+        this._router.onSameUrlNavigation = 'reload';
+        this._router.navigate(['/login']);
       }
     },error => {
       if(error != null){
