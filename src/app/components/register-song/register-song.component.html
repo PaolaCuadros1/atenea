@@ -1,42 +1,44 @@
 <div class="container">
-    <form class="form-signUp">
-        <div class="col-md-6 ">
-
-
-        </div>
-
-
-
-
-
-    </form>
-
-
-    <div class="col-md-12">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="form-group form-group-1 col-md-6">
-                    <label class="name-form" for="address">Dirección</label>
-                    <input type="text" class="form-control form-control-1" id="address" placeholder="Dirección" required>
+    <div class="mx-auto" style="width: 80%;">
+        <div class="mx-auto" style="width: 80%;">
+            <div class="card black-card">
+                <div class="card-body">
+                    <h4 class="card-title">Registra Nuevas peliculas</h4>
+                    <br>
+                    <br>
+                    <form #formularioPeliculas="ngForm" (ngSubmit)="actualizarUsuario()">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group  col-md-12">
+                                        <label class="name-form" for="nameMovie">Nombre de la pelicula</label>
+                                        <input type="text" class="form-control " id="nameMovie" placeholder="Nombre de pelicula" required>
+                                    </div>
+                                    <div class="form-group  col-md-12">
+                                        <label class="name-form" for="time">Duración</label>
+                                        <input type="text" class="form-control " id="address" placeholder="Duración de la pelicula" required>
+                                    </div>
+                                    <div class="form-group  col-md-12">
+                                        <label class="name-form" for="city">Genero</label>
+                                        <input type="text" class="form-control " id="genderS" placeholder="Genero" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group  col-md-6">
+                                        <label class="name-form" for="address">Sinopsis</label>
+                                        <textarea name="sinopsis" id="sinopsis" cols="40" rows="8.5" placeholder="sinopsis :)"></textarea>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn  boton">subir imagen pelicula</button>
+                                    <button type="submit" class="btn  boton">subir imagen pelicula2</button>
+                                    <button type="submit" class="btn  boton">link de reproducción</button>
+                                </div>
+                                <button id="saveData" type="button" class="btn boton" onclick="validateEmptyData()">Guardar Pelicula</button></div>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group form-group-1 col-md-6">
-                    <label class="name-form" for="address">duracion</label>
-                    <input type="text" class="form-control form-control-1" id="address" placeholder="Dirección" required>
-                </div>
-                <div class="form-group form-group-1 col-md-6">
-                    <label class="name-form" for="city">Ciudad</label>
-                    <input type="text" class="form-control form-control-1" id="city" placeholder="Ciudad" required>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group form-group-1 col-md-6">
-                    <label class="name-form" for="address">Sinopsis</label>
-                    <textarea name="sinopsis" id="sinopsis" cols="60" rows="8.5" placeholder="sinopsis :)"></textarea>
-                </div>
-                <a class="boton" id="boton-form" style="color: white !important;;" routerLink="/account">Crear usuario</a>
-                <a class="boton" id="boton-form" style="color: white !important;;" routerLink="/account">Crear usuario</a>
-
-                <a class="boton" id="boton-form" style="color: white !important;;" routerLink="/account">Crear usuario</a>
             </div>
         </div>
     </div>
+</div>

@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { UserService } from './services/usuario.service';
+import { MovieService } from './services/movie.service';
 
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
@@ -17,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { UpdateUserComponent} from './components/update-user/update-user.component';
 import { LoginComponent } from './components/login/login.component';
 import { UserAcountComponent } from './components/user-acount/user-acount.component';
+import { MovieListComponent } from './components/movie-list/movie-list.component';
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
   { path: 'aboutus', component: AboutusComponent },
   { path: 'login', component: LoginComponent },
   { path: 'updateUser', component: UpdateUserComponent },
-  { path: 'userAcount', component: UserAcountComponent }
+  { path: 'userAcount', component: UserAcountComponent },
+  { path: 'movieList', component: MovieListComponent }
 
   //{path: 'main', component: MainComponent}, -> Ruta de ejemplo.
 ];
@@ -43,6 +46,7 @@ const appRoutes: Routes = [
     UpdateUserComponent,
     LoginComponent,
     UserAcountComponent,
+    MovieListComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,8 @@ const appRoutes: Routes = [
     HttpClientModule
   ],
   providers: [
-    UserService
+    UserService,
+    MovieService
   ],
   bootstrap: [AppComponent]
 })
