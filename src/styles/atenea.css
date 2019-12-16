@@ -12,13 +12,6 @@
   margin-left: 60px;
 }
 
-.name-menu {
-  display: inline-flex;
-  list-style: none;
-  margin-top: 20px;
-  margin-left: 20px;
-  color: #f2dcf2;
-}
 .iniciar {
   display: flex;
   float: center;
@@ -116,15 +109,19 @@ a {
   margin-right: 4%;
 }
 
-.name-menu {
-  color: #f2dcf2 !important;
-  padding: 0px !important;
-  /*  background-color: #2E2E2E; */
-}
 /* cambio en el menu */
-.name-menu:hover {
+
+.name-menu {
+  display: inline-flex;
+  list-style: none;
+  margin-top: 15px;
+  margin-left: 15px;
+  color: #f2dcf2;
+}
+
+.name-menu > li:hover {
   font-size: 20px;
-  border-bottom: 1px solid #bc52d9;
+  border-bottom: inset 1px #bc52d9;
 }
 
 .music-image {
