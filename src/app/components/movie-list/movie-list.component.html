@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="mx-auto" style="width: 80%;">
+    <div class="card black-card">
+      <div class="card-body">
+        <h4 class="card-title">Listado de peliculas en stock</h4>
+        <table class="table">
+          <thead>
+            <tr class="titles-table">
+              <th scope="col">Título</th>
+              <th scope="col">Genero</th>
+              <th scope="col">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let movie of listMovies; let i = index;">
+              <td *ngIf="movie.name" class="labels-forms">{{movie.name}}</td>
+              <td *ngIf="movie.name" class="labels-forms">{{movie.gender}}</td>
+              <td *ngIf="movie.name" class="labels-forms">
+                <button type="button" class="btn btn-danger" (click)="removeMovie(movie._id)"><i
+                    class="fas fa-trash-alt"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

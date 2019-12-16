@@ -30,5 +30,17 @@ url = 'http://localhost:4000/api/';
       options
     ).pipe(map(res => res));
   }
+  
+  getListMovies() {
+    return this._http.get(
+      this.url + 'getAllMovies'
+    ).pipe(map(res => res));
+  }
+
+  removeMovie(idMovie) {
+    return this._http.delete(
+      this.url + 'removeMovie/'+idMovie
+    ).pipe(map(res => res));
+  }
 
 }
