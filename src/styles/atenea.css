@@ -552,3 +552,7 @@ width: 80%;
   color:white;
   text-align: center;
 }
+
+.logged{
+  display: none;
+}
