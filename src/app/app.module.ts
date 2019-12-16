@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { UserService } from './services/usuario.service';
+// importar servicio peliculas
 import { MovieService } from './services/movie.service';
 
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { LoginComponent } from './components/login/login.component';
 import { UserAcountComponent } from './components/user-acount/user-acount.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { LoginAdminComponent } from './components/login-admin/login-admin.component';
+import { MovieGerderComponent } from './components/movie-gerder/movie-gerder.component';
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
@@ -28,6 +30,8 @@ const appRoutes: Routes = [
   { path: 'aboutus', component: AboutusComponent },
   { path: 'login', component: LoginComponent },
   { path: 'updateUser', component: UpdateUserComponent },
+  { path: 'movieList', component: MovieListComponent },
+  { path: 'movie-gender', component: MovieGerderComponent},
   { path: 'userAcount', component: UserAcountComponent },
   { path: 'movieList', component: MovieListComponent },
   { path: 'login-admin', component: LoginAdminComponent },
@@ -47,6 +51,8 @@ const appRoutes: Routes = [
     FooterComponent,
     UpdateUserComponent,
     LoginComponent,
+    MovieListComponent,
+    MovieGerderComponent,
     UserAcountComponent,
     MovieListComponent,
     LoginAdminComponent
