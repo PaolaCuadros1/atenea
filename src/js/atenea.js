@@ -21,3 +21,10 @@ function logged(){
   $('.notLoggedIn').hide();
   $('.logged').show();
 }
+
+function cerrarSesion(){
+  $('.notLoggedIn').show();
+  $('.logged').hide();
+  localStorage.removeItem('sesion');
+  localStorage.clear();
+}
