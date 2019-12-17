@@ -525,9 +525,10 @@ width: 80%;
 }
 
 .genero1{
-  background-color:  #bc52d9;
+  background-color:  rgb(4, 4, 49,0.3);
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 2%;
 }
 
 .genero2{
