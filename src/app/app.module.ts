@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './services/usuario.service';
 // importar servicio peliculas
 import { MovieService } from './services/movie.service';
+import { SafePipe } from './components/common/safe-url.component';
 
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
@@ -38,6 +39,8 @@ const appRoutes: Routes = [
   { path: 'movieList', component: MovieListComponent },
   { path: 'login-admin', component: LoginAdminComponent },
   { path: 'user-acount', component: UserAcountComponent },
+  { path: 'reproductor/:id', component: ReproductorComponent },
+  { path: 'register-movie', component: RegisterSongComponent },
   { path: 'redes2', component: Redes2Component },
   { path: 'reproductor', component: ReproductorComponent },
 
@@ -61,6 +64,8 @@ const appRoutes: Routes = [
     UserAcountComponent,
     MovieListComponent,
     LoginAdminComponent,
+    ReproductorComponent,
+    SafePipe,
     Redes2Component,
     ReproductorComponent
   ],
