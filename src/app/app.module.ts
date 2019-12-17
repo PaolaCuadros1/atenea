@@ -35,6 +35,7 @@ const appRoutes: Routes = [
   { path: 'userAcount', component: UserAcountComponent },
   { path: 'movieList', component: MovieListComponent },
   { path: 'login-admin', component: LoginAdminComponent },
+  { path: 'user-acount', component: UserAcountComponent },
 
   //{path: 'main', component: MainComponent}, -> Ruta de ejemplo.
 ];
