@@ -1,0 +1,21 @@
+.redes2 {
+    display: block;
+    list-style: none;
+    margin-top: 35px;
+    margin-left: 180px;
+    position: fixed;
+    top:30%;
+    right:5%;
+}
+
+.twitter2 {
+    margin-top: 10px;
+}
+
+.facebook2 {
+    margin-top: 5px;
+}
+
+.instagram2 {
+    margin-top: 5px;
+}
