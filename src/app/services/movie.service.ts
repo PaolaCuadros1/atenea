@@ -43,4 +43,10 @@ url = 'http://localhost:4000/api/';
     ).pipe(map(res => res));
   }
 
+  getMovie(idMovie) {
+    return this._http.get(
+      this.url + 'movie/' + idMovie
+    ).pipe(map(res => res));
+  }
+
 }
