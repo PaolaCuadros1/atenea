@@ -197,6 +197,7 @@ a {
 }
 
 .black-card {
+  background-color: rgb(1, 1, 59,0.8);
   color: white;
   text-align: center;
 }
