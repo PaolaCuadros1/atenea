@@ -1,3 +1,9 @@
+
+
+
+
+
+
 function validateEmptyData() {
 
   if ($('#nombre').val() == '' || $('#apellido').val() == '' || $('#correo').val() == '' || $('#contrasena').val() == '') {
@@ -20,6 +26,8 @@ function validateEmptyData() {
 function logged(){
   $('.notLoggedIn').hide();
   $('.logged').show();
+  $('.redes2').show();
+  $('.redes').hide();
 }
 
 function cerrarSesion(){
@@ -27,4 +35,6 @@ function cerrarSesion(){
   $('.logged').hide();
   localStorage.removeItem('sesion');
   localStorage.clear();
+  $('.redes2').hide();
+  $('.redes').show();
 }
