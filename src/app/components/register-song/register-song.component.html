@@ -6,39 +6,49 @@
                     <h4 class="card-title">Registra Nuevas peliculas</h4>
                     <br>
                     <br>
-                    <form #formularioPeliculas="ngForm" (ngSubmit)="actualizarUsuario()">
+                    <form #formularioPeliculas="ngForm" (ngSubmit)="guardarPelicula()">
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="form-group  col-md-12">
                                         <label class="name-form" for="nameMovie">Nombre de la pelicula</label>
-                                        <input type="text" class="form-control " id="nameMovie" placeholder="Nombre de pelicula" required>
+                                        <input type="text" class="form-control " placeholder="Nombre de pelicula" required name="name" #name="ngModel" [(ngModel)]="peliculaRegistro.name">
                                     </div>
                                     <div class="form-group  col-md-12">
                                         <label class="name-form" for="time">Duración</label>
-                                        <input type="text" class="form-control " id="address" placeholder="Duración de la pelicula" required>
+                                        <input type="text" class="form-control " placeholder="Duración de la pelicula" required name="duration" #duration="ngModel" [(ngModel)]="peliculaRegistro.duration">
+
                                     </div>
                                     <div class="form-group  col-md-12">
                                         <label class="name-form" for="city">Genero</label>
-                                        <input type="text" class="form-control " id="genderS" placeholder="Genero" required>
+                                        <input type="text" class="form-control " placeholder="Genero" required name="gender" #gender="ngModel" [(ngModel)]="peliculaRegistro.gender">
+                                    </div>
+                                    <div class="form-group  col-md-12">
+                                        <label class="name-form">link pelicula</label>
+                                        <input type="text" class="form-control" placeholder="link de reproducción" required name="url" #url="ngModel" [(ngModel)]="peliculaRegistro.url" />
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group  col-md-6">
                                         <label class="name-form" for="address">Sinopsis</label>
-                                        <textarea name="sinopsis" id="sinopsis" cols="40" rows="8.5" placeholder="sinopsis :)"></textarea>
+                                        <textarea name="sinopsis" cols="40" rows="8.5" placeholder="sinopsis :)" name="synopsis" #synopsis="ngModel" [(ngModel)]="peliculaRegistro.synopsis"></textarea>
                                     </div>
                                 </div>
-                                <div>
-                                    <button type="submit" class="btn  boton">subir imagen pelicula</button>
-                                    <button type="submit" class="btn  boton">subir imagen pelicula2</button>
-                                    <button type="submit" class="btn  boton">link de reproducción</button>
+                                <div class="btnspeli">
+                                    <input type="file" class="btn  boton-peli" value="subir imagen pelicula" />
+                                    <input type="file" class="btn  boton-peli" value="subir imagen pelicula2" />
+
+                                    <br>
                                 </div>
-                                <button id="saveData" type="button" class="btn boton" onclick="validateEmptyData()">Guardar Pelicula</button></div>
+                                <br>
+                                <br>
+                                <!-- <button id="saveData" type="button" class="btn  boton-peli" onclick="validateEmptyData()">Guardar Pelicula</button> <br>--></div>
+                            <button type="submit">Guardar</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <br><br><br><br><br>
 </div>

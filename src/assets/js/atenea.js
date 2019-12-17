@@ -16,3 +16,8 @@ function validateEmptyData() {
   }
 
 }
+
+function logged(){
+  $('.notLoggedIn').hide();
+  $('.logged').show();
+}
