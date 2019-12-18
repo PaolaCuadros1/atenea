@@ -247,17 +247,17 @@ a {
 }
 /* Fin nueva línea */
 .about {
-    line-height: 48px;
-    text-align: left;
-    float: left;
-    cursor: pointer;
-    width: 70%; /* Nueva línea */
+  line-height: 48px;
+  text-align: left;
+  float: left;
+  cursor: pointer;
+  width: 70%; /* Nueva línea */
 }
 .legal {
-    line-height: 48px;
-    overflow: auto;
-    text-align: right;
-    width: 30%; /* Nueva línea */
+  line-height: 48px;
+  overflow: auto;
+  text-align: right;
+  width: 30%; /* Nueva línea */
 }
 
 .labels-forms {
@@ -436,9 +436,9 @@ width: 80%;
     border:none;
   }*/
 
-  /* FIN ESTILOS USER ACOUNT*/
+/* FIN ESTILOS USER ACOUNT*/
 
-.error{
+.error {
   color: red;
   display: none;
   font-weight: bold;
@@ -449,4 +449,3 @@ width: 80%;
   font-size: 18px;
   font-weight: bold;
 }
-
