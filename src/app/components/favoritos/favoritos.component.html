@@ -10,37 +10,26 @@
 
   <!-- The slideshow -->
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img
-        src="/assets/images/historiascruzadas.jpg"
-        alt=""
-        width="100%"
-        height="400"
-      />
+    <div style="text-align: center;" class="carousel-item active">
+      <img src="/assets/images/favoritos/banner1.png" alt="" height="400" />
       <div class="carousel-caption d-none d-md-block">
-        <h5>Vidas Cruzadas</h5>
-        <p>Tú eres amable.</p>
-        <p>tú eres inteligente.</p>
-        <p>tú eres importante.</p>
+        <p style="font-size:20px;">En los peores momentos, cuando vemos nuestra vida en un segundo, <br> encontramos algo, algo que nos da fuerzas
+          para continuar, algo que nos impulsa.</p> <h4>Lara Croft</h4>
+
       </div>
     </div>
-    <div class="carousel-item">
-      <img
-        src="/assets/images/aTodosLosChicosQueMeEnamore.jpg"
-        alt=""
-        width="100%"
-        height="400"
-      />
+    <div style="text-align: center;" class="carousel-item">
+      <img src="/assets/images/favoritos/banner2.png" alt="" height="400" />
       <div class="carousel-caption d-none d-md-block">
-        <h5>Vidas Cruzadas</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <p style="font-size: 20px;">¡Las mujeres son la fuerza del futuro, y la hermandad es más fuerte que cualquier cosa!</p>
+        <h4>Mujer Maravilla</h4>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="ny.jpg" alt="" width="100%" height="400" />
+    <div style="text-align: center;" class="carousel-item">
+      <img src="/assets/images/favoritos/banner3.png" alt="" height="400" />
       <div class="carousel-caption d-none d-md-block">
-        <h5>Vidas Cruzadas</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <p style="font-size: 20px;">¿Crees que son sólo tus sueños los que no se han cumplido?</p>
+        <h4>Thelma</h4>
       </div>
     </div>
   </div>
@@ -56,7 +45,8 @@
 
 <!-- CARRUSEL DE FAVORITOS -->
 
-<div class="containerFavoritos my-4">
+  
+<div style="width:1200px; margin-left:80px;" class="containerFavoritos my-4">
   <!--  <h2>Mis Favoritos</h2> -->
 
   <!--  <p><strong>Detailed documentation and more examples of Bootstrap grid you can find in our <a href="https://mdbootstrap.com/docs/jquery/javascript/carousel/"
@@ -65,11 +55,9 @@
   <hr class="my-4" />
 
   <!--Carousel Wrapper-->
-  <div
-    id="multi-item-example"
-    class="carousel slide carousel-multi-item"
-    data-ride="carousel"
-  >
+  <section class="misfavoritos2">
+
+  <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
     <!--Controls-->
     <div class="controls-top">
       <!-- <a
@@ -89,21 +77,17 @@
       <br />
       <br />
       <br />
-      <div class="misFavoritos"><h2>Mis Favoritas</h2></div>
+
+  
+      <div class="misFavoritos">
+        <h2>Mis Favoritas</h2>
+      </div>
       <br />
       <br />
-      <a
-        class="carousel-control-prev"
-        href="#multi-item-example"
-        data-slide="prev"
-      >
+      <a class="carousel-control-prev" href="#multi-item-example" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </a>
-      <a
-        class="carousel-control-next"
-        href="#multi-item-example"
-        data-slide="next"
-      >
+      <a class="carousel-control-next" href="#multi-item-example" data-slide="next">
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
@@ -111,11 +95,7 @@
 
     <!--Indicators-->
     <ol class="carousel-indicators">
-      <li
-        data-target="#multi-item-example"
-        data-slide-to="0"
-        class="active"
-      ></li>
+      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
       <li data-target="#multi-item-example" data-slide-to="1"></li>
       <li data-target="#multi-item-example" data-slide-to="2"></li>
     </ol>
@@ -128,16 +108,14 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-2">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                alt="Card image cap" />
               <div class="card-body">
                 <h4 class="card-title">Película</h4>
                 <p class="card-text">
                   Género
                 </p>
+                <button class="boton">Eliminar Favoritos</button>
                 <!-- <a class="btn btn-primary">Button</a> -->
               </div>
             </div>
@@ -145,16 +123,14 @@
 
           <div class="col-md-4 clearfix d-none d-md-block">
             <div class="card mb-2">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                alt="Card image cap" />
               <div class="card-body">
                 <h4 class="card-title">Película</h4>
                 <p class="card-text">
                   Género
                 </p>
+                <button class="boton">Eliminar Favoritos</button>
                 <!-- <a class="btn btn-primary">Button</a> -->
               </div>
             </div>
@@ -162,16 +138,14 @@
 
           <div class="col-md-4 clearfix d-none d-md-block">
             <div class="card mb-2">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                alt="Card image cap" />
               <div class="card-body">
                 <h4 class="card-title">Película</h4>
                 <p class="card-text">
                   Género
                 </p>
+                <button class="boton">Eliminar Favoritos</button>
                 <!-- <a class="btn btn-primary">Button</a> -->
               </div>
             </div>
@@ -185,11 +159,8 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-2">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                alt="Card image cap" />
               <div class="card-body">
                 <h4 class="card-title">Película</h4>
                 <p class="card-text">
@@ -202,11 +173,8 @@
 
           <div class="col-md-4 clearfix d-none d-md-block">
             <div class="card mb-2">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                alt="Card image cap" />
               <div class="card-body">
                 <h4 class="card-title">Película</h4>
                 <p class="card-text">
@@ -219,11 +187,8 @@
 
           <div class="col-md-4 clearfix d-none d-md-block">
             <div class="card mb-2">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                alt="Card image cap" />
               <div class="card-body">
                 <h4 class="card-title">Película</h4>
                 <p class="card-text">
@@ -242,11 +207,8 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-2">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                alt="Card image cap" />
               <div class="card-body">
                 <h4 class="card-title">Película</h4>
                 <p class="card-text">
@@ -259,11 +221,8 @@
 
           <div class="col-md-4 clearfix d-none d-md-block">
             <div class="card mb-2">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                alt="Card image cap" />
               <div class="card-body">
                 <h4 class="card-title">Película</h4>
                 <p class="card-text">
@@ -276,11 +235,8 @@
 
           <div class="col-md-4 clearfix d-none d-md-block">
             <div class="card mb-2">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                alt="Card image cap" />
               <div class="card-body">
                 <h4 class="card-title">Película</h4>
                 <p class="card-text">
@@ -296,5 +252,7 @@
     </div>
     <!--/.Slides-->
   </div>
+  </section>
   <!--/.Carousel Wrapper-->
+  <br><br><br><br>
 </div>

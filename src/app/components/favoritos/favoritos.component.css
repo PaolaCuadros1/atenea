@@ -29,5 +29,12 @@
 .misFavoritos h2 {
   font-family: "Quicksand", sans-serif !important;
   color: white;
-  margin-left: 60px;
+}
+
+.card {
+  display: flex;
+}
+
+.boton{
+  justify-content: end;
 }
