@@ -1,6 +1,8 @@
 .backgr{
     background-image: url(../../../assets/images/fondo4.jpeg);
     background-size: cover;
+    height: 100%;
+    padding-bottom: 80px;
 }
 
 .col-md-6 img{
