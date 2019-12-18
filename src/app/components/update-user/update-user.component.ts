@@ -50,7 +50,6 @@ export class UpdateUserComponent implements OnInit {
             alert("No ingresaste tu imagen")
             //alert('No hay ninguna img')
           } else {
-            alert(`tu imagen es ${this.archivoSubir.name}`);
             this.UserService.cargarImagenUsuario(this.archivoSubir, this.usuarioActualizar._id)
               .subscribe((result: any) => {
                 this.usuarioActualizar.imagen = result.imagen;

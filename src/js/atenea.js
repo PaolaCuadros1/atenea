@@ -16,3 +16,28 @@ function validateEmptyData() {
   }
 
 }
+
+function logged(){
+  $('.notLoggedIn').hide();
+  $('.logged').show();
+   $('.redes').hide();
+  //  $('.redes2').show();
+}
+
+function cerrarSesion(){
+  $('.notLoggedIn').show();
+  $('.logged').hide();
+  localStorage.removeItem('sesion');
+  localStorage.clear();
+   $('.redes').show();
+}
+
+function play(e) {
+  e.preventDefault();
+  document.getElementById('sipnosis-movie').style.display = 'none';
+
+  const video = document.getElementById('movie');
+  if (video && video.src) {
+    video.src += '?autoplay=1';
+  }
+}

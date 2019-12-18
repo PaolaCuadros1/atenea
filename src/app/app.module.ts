@@ -5,7 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { UserService } from './services/usuario.service';
+// importar servicio peliculas
 import { MovieService } from './services/movie.service';
+import { SafePipe } from './components/common/safe-url.component';
 
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
@@ -20,6 +22,10 @@ import { LoginComponent } from './components/login/login.component';
 import { UserAcountComponent } from './components/user-acount/user-acount.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import {FavoritosComponent} from './components/favoritos/favoritos.component';
+import { LoginAdminComponent } from './components/login-admin/login-admin.component';
+import { MovieGerderComponent } from './components/movie-gerder/movie-gerder.component';
+import { Redes2Component } from './components/redes2/redes2.component';
+import { ReproductorComponent } from './components/reproductor/reproductor.component';
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
@@ -28,10 +34,18 @@ const appRoutes: Routes = [
   { path: 'aboutus', component: AboutusComponent },
   { path: 'login', component: LoginComponent },
   { path: 'updateUser', component: UpdateUserComponent },
+  { path: 'movieList', component: MovieListComponent },
+  { path: 'movie-gender', component: MovieGerderComponent},
   { path: 'userAcount', component: UserAcountComponent },
   { path: 'movieList', component: MovieListComponent },
   { path: 'favoritos', component: FavoritosComponent},
-
+  { path: 'login-admin', component: LoginAdminComponent },
+  { path: 'user-acount', component: UserAcountComponent },
+  { path: 'reproductor/:id', component: ReproductorComponent },
+  { path: 'register-movie', component: RegisterSongComponent },
+  { path: 'redes2', component: Redes2Component },
+  { path: 'reproductor', component: ReproductorComponent },
+  { path: 'redes', component: RedesComponent },
   //{path: 'main', component: MainComponent}, -> Ruta de ejemplo.
 ];
 
@@ -47,8 +61,15 @@ const appRoutes: Routes = [
     FooterComponent,
     UpdateUserComponent,
     LoginComponent,
+    MovieListComponent,
+    MovieGerderComponent,
     UserAcountComponent,
-    MovieListComponent
+    MovieListComponent,
+    LoginAdminComponent,
+    ReproductorComponent,
+    SafePipe,
+    Redes2Component,
+    ReproductorComponent
   ],
   imports: [
     BrowserModule,

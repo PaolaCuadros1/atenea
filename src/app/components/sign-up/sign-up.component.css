@@ -1,0 +1,7 @@
+.contenedor1{
+    background-image: url(../../../assets/images/fondo2.jpg);
+    height: 110%;
+    padding: none;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}

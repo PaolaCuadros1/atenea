@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center align-items-center">
+      <div class="position-relative" style="width: 80%; height: 500px; cursor: pointer;">
+        <div id="sipnosis-movie" class="position-absolute text-light p-5 w-100 h-100" style="top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.8);" onclick="play(event)" title="Reproducir">
+          <h1 class="mb-0">{{movie.name}}</h1>
+          <span class="text-muted">{{movie.duration}}</span>
+
+          <h2 class="mb-0">Género</h2>
+          <span>{{movie.gender}}</span>
+
+          <h2>Sinopsis</h2>
+          <p class="text-justify">{{movie.synopsis}}</p>
+
+          <button class="btn btn-light"><i class="fas fa-play"></i> Reproducir</button>
+        </div>
+        <iframe id="movie" [src]="movie.url | safe" class="w-100 h-100"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 mt-1" style="margin-left: 10%;">
+      <a routerLink="/movieList" class="btn btn-warning"><i class="fas fa-arrow-left"></i> Regresar</a>
+    </div>
+  </div>
+</div>

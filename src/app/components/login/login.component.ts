@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit {
     this.usuarioService.iniciarSesion(this.login).subscribe((response: any) => {
       let usuario = response.usuario;
       this.login = usuario;
+      console.log("--------->", this.login)
       if(this.login){
         let usuarioLogueado = new Usuario(
           this.login._id,
@@ -42,7 +43,8 @@ export class LoginComponent implements OnInit {
         )
         //Creamos el objeto sesión en localStorage
         //Al crear un localStorage.setItem() él nos va a pedir dos parámetros: el primero es el nombre del objeto
-        // y el segundo es el valor de dicho objeto 
+        // y el segundo es el valor de dicho objeto
+        console.log("--------> ", usuarioLogueado);
         localStorage.setItem("sesion", JSON.stringify(usuarioLogueado));
         //Consumir el servicio de obtenerNombreUsuario()
         this.identidad = this.usuarioService.obtenerNombreUsuario();
@@ -51,7 +53,7 @@ export class LoginComponent implements OnInit {
         //Vamos a inidicarle al sistema que cuando el usuario inicie sesión lo lleve directamente a su cuenta
         //Para eso creamos un manejador de ruta que redireccione al usuario a la cuenta una vez haya iniciado
         //sesión correctamente
-        //this._router.navigate(['/account']);
+        this._router.navigate(['/user-acount']);
       }else{
         alert("Usuario no identificado"); //Cambios Cris
         this._router.routeReuseStrategy.shouldReuseRoute = () => false;
