@@ -26,6 +26,7 @@ import { LoginAdminComponent } from './components/login-admin/login-admin.compon
 import { MovieGerderComponent } from './components/movie-gerder/movie-gerder.component';
 import { Redes2Component } from './components/redes2/redes2.component';
 import { ReproductorComponent } from './components/reproductor/reproductor.component';
+import { SaludoComponent } from './components/saludo/saludo.component';
 
 //Acá deben agregar las rutas.
 const appRoutes: Routes = [
@@ -70,7 +71,8 @@ const appRoutes: Routes = [
     SafePipe,
     Redes2Component,
     ReproductorComponent,
-    FavoritosComponent
+    FavoritosComponent,
+    SaludoComponent
   ],
   imports: [
     BrowserModule,
