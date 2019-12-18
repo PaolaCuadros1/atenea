@@ -1,8 +1,14 @@
+.misfavoritos{
+ background-image: url(./../../../assets/images/cuenta/fondo-acount3.png);
+}
+
+.componente {
+  padding-top: 150px;
+}
 
 .slider-portada{
     width: 100%;
-    height: 600px;
-    margin: auto;
+    height: 400px;
     position: relative;
     list-style: none;
     padding: 0;
@@ -13,6 +19,8 @@
   }
   
   .slider-portada img{
+    display: flex;
+    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -20,11 +28,10 @@
     height: 100%;
     opacity: 0; 
     z-index: -1;
-    object-fit: contain;
+    object-fit: cover;
   }
   
   .slider-portada input[type="radio"]{
-    position: relative;
     z-index: 2;
     margin: 5px 10px 15px 0px;
   }
@@ -34,23 +41,27 @@
   }
   
     .user-acount {
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
     width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     }
     
     .user-acount-generos {
+      background-image: url(./../../../assets/images/cuenta/fondo-G2.png);
+      background-repeat: no-repeat;
       display: flex;
       vertical-align: middle;
       margin-left: auto;
       margin-right: auto;
       width: 80%;
-      padding-top: 80px;
-      padding-bottom: 30px;
+      padding-top: 120px;
+      padding-bottom: 120px;
       }
     
       .boton-user-acount{
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
       background-color:  rgba(1, 1, 59, 0.836);
       width: 200px;
       border: none;
@@ -101,7 +112,7 @@
           width:300px;
           min-height:400px;
           background:#fff;
-          box-shadow:0 20px 50px rgba(0,0,0,.1);
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
           border-radius:10px;
           transition:0.5s;
       }
@@ -119,7 +130,7 @@
           width:100%;
       }
       .card .box .img {
-          width:80%;
+          width:100%;
           height:80%;
           margin:0 auto;
           border-radius:0%;
@@ -179,7 +190,6 @@
         border:none;
         width: 80%;
       }
-      /* FIN ESTILOS USER ACOUNT*/
   
   .row {
       margin-left: auto;
@@ -1067,7 +1077,6 @@
     .waves-circle {
       -webkit-transform: translateZ(0);
               transform: translateZ(0);
-      -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
     }
     
     .waves-input-wrapper {
@@ -1088,7 +1097,6 @@
       height: 2.5em;
       line-height: 2.5em;
       border-radius: 50%;
-      -webkit-mask-image: none;
     }
     
     .waves-block {
