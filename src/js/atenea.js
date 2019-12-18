@@ -1,9 +1,3 @@
-
-
-
-
-
-
 function validateEmptyData() {
 
   if ($('#nombre').val() == '' || $('#apellido').val() == '' || $('#correo').val() == '' || $('#contrasena').val() == '') {
@@ -37,4 +31,14 @@ function cerrarSesion(){
   localStorage.clear();
   $('.redes2').hide();
   $('.redes').show();
+}
+
+function play(e) {
+  e.preventDefault();
+  document.getElementById('sipnosis-movie').style.display = 'none';
+
+  const video = document.getElementById('movie');
+  if (video && video.src) {
+    video.src += '?autoplay=1';
+  }
 }
