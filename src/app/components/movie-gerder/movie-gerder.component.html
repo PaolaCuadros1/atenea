@@ -1,362 +1,113 @@
-<div class="containerb" style="    padding-top: 10% !important;" >
+<div class="containerb" style="    padding-top: 10% !important;">
     <div class="mx-auto">
-        <h2>Clasificación generos de peliculas</h2>
+        <h2>Clasificación géneros de películas</h2>
         <br>
+
+
         <div class=genero1>
-            <h3>Romantico</h3>
+            <br>
+            <h3>Romance</h3>
             <br>
             <div class="d-flex justify-content-around">
-                <div class="card" style="width: 12rem;">
+                <div class="card" style="width: 12rem;" *ngFor="let movie of genderRomance; let i = index;">
                     <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Desde aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <!-- Hasta aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar
-                            el mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
+                        <h5 class="card-title">{{movie.name}}</h5>
+                        <p class="card-text">{{movie.synopsis}}
                         </p>
                     </div>
                 </div>
             </div>
             <br>
+            <br>
         </div>
-        <br>
         <div class="genero2">
+            <br>
             <h3>Comedia</h3>
             <br>
             <div class="d-flex justify-content-around">
-                <div class="card" style="width: 12rem;">
+                <div class="card" style="width: 12rem;" *ngFor="let movie of genderComedia; let i = index;">
                     <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
+                        <h5 class="card-title">{{movie.name}}</h5>
+                        <p class="card-text">{{movie.synopsis}}
                         </p>
                     </div>
                 </div>
-                <!-- Desde aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <!-- Hasta aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
+                <br>
             </div>
             <br>
         </div>
         <br>
         <div class=genero1>
+            <br>
             <h3>Drama</h3>
             <br>
             <div class="d-flex justify-content-around">
-                <div class="card" style="width: 12rem;">
+                <div class="card" style="width: 12rem;" *ngFor="let movie of genderDrama; let i = index;">
                     <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
+                        <h5 class="card-title">{{movie.name}}</h5>
+                        <p class="card-text">{{movie.synopsis}}
                         </p>
                     </div>
                 </div>
-                <!-- Desde aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <!-- Hasta aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
+                <br>
             </div>
             <br>
             <br>
         </div>
         <div class=genero2>
+            <br>
             <h3>Anime</h3>
             <br>
             <div class="d-flex justify-content-around">
-                <div class="card" style="width: 12rem;">
+                <div class="card" style="width: 12rem;" *ngFor="let movie of genderAnime; let i = index;">
                     <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
+                        <h5 class="card-title">{{movie.name}}</h5>
+                        <p class="card-text">{{movie.synopsis}}
                         </p>
                     </div>
                 </div>
-                <!-- Desde aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <!-- Hasta aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
+                <br>
             </div>
             <br>
             <br>
         </div>
         <div class="genero1">
+            <br>
             <h3>Acción</h3>
             <br>
             <div class="d-flex justify-content-around">
-                <div class="card" style="width: 12rem;">
+                <div class="card" style="width: 12rem;" *ngFor="let movie of genderAccion; let i = index;">
                     <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
+                        <h5 class="card-title">{{movie.name}}</h5>
+                        <p class="card-text">{{movie.synopsis}}
                         </p>
                     </div>
                 </div>
-                <!-- Desde aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <!-- Hasta aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
+                <br>
             </div>
+            <br>
+            <br>
         </div>
         <div class="genero2">
+            <br>
             <h3>Documentales</h3>
             <br>
             <div class="d-flex justify-content-around">
-                <div class="card" style="width: 12rem;">
+                <div class="card" style="width: 12rem;" *ngFor="let movie of genderDocumental; let i = index;">
                     <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <!-- Desde aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <!-- Hasta aca -->
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">La mujer maravilla</h5>
-                        <p class="card-text">Diana, hija de dioses y princesa de las amazonas. una gran guerra que puede
-                            devastar el
-                            mundo.
+                        <h5 class="card-title">{{movie.name}}</h5>
+                        <p class="card-text">{{movie.synopsis}}
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+        <br><br><br><br><br><br>
     </div>
+</div>
