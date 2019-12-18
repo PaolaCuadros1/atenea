@@ -69,7 +69,8 @@ const appRoutes: Routes = [
     ReproductorComponent,
     SafePipe,
     Redes2Component,
-    ReproductorComponent
+    ReproductorComponent,
+    FavoritosComponent
   ],
   imports: [
     BrowserModule,
