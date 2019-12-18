@@ -23,15 +23,15 @@ export class ReproductorComponent implements OnInit {
     }
   }
 
-  play(e) {
+  /*play(e) {
     e.preventDefault();
     document.getElementById('sipnosis-movie').style.display = 'none';
 
     const video = document.getElementById('movie');
-    if (video) {
+    if (video && video.src) {
       video.src += '?autoplay=1';
     }
-  }
+  }*/
 
   loadMovie(idMovie) {
     this.MovieService.getMovie(idMovie).subscribe(
