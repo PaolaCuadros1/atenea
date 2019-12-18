@@ -20,8 +20,8 @@ function validateEmptyData() {
 function logged(){
   $('.notLoggedIn').hide();
   $('.logged').show();
-  $('.redes2').show();
-  $('.redes').hide();
+   $('.redes').hide();
+  //  $('.redes2').show();
 }
 
 function cerrarSesion(){
@@ -29,8 +29,7 @@ function cerrarSesion(){
   $('.logged').hide();
   localStorage.removeItem('sesion');
   localStorage.clear();
-  $('.redes2').hide();
-  $('.redes').show();
+   $('.redes').show();
 }
 
 function play(e) {

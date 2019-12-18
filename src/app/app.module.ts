@@ -43,7 +43,7 @@ const appRoutes: Routes = [
   { path: 'register-movie', component: RegisterSongComponent },
   { path: 'redes2', component: Redes2Component },
   { path: 'reproductor', component: ReproductorComponent },
-
+  { path: 'redes', component: RedesComponent },
   //{path: 'main', component: MainComponent}, -> Ruta de ejemplo.
 ];
 
