@@ -21,7 +21,7 @@ function logged(){
   $('.notLoggedIn').hide();
   $('.logged').show();
    $('.redes').hide();
-  //  $('.redes2').show();
+  
 }
 
 function cerrarSesion(){
