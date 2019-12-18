@@ -1,11 +1,10 @@
 <div class="menu">
-  <a title="logo-atenea-2" href=""
+  <a  title="logo-atenea-2" href=""
     ><img
       class="logo"
       src="../../../assets/images/logo-atenea-2.png"
       alt="logo-atenea-2"
-      width="250px"
-      height="100px"
+      height="100px" 
   /></a>
   <ul class="name-menu">
     <li class="notLoggedIn">
@@ -21,6 +20,16 @@
     <li class="logged">
       <a class="nav-link name-menu sign-up" routerLink="/updateUser">
         Actualizar
+      </a>
+    </li>
+    <li class="logged">
+      <a class="nav-link name-menu sign-up" routerLink="/movie-gender">
+        Todas los generos
+      </a>
+    </li>
+    <li class="logged">
+      <a class="nav-link name-menu sign-up" routerLink="/movie-gender" onclick="cerrarSesion()" (click)="cerrarSesion()" >
+        cerrar sesión
       </a>
     </li>
   </ul>
