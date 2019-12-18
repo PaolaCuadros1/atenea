@@ -42,11 +42,17 @@ url = 'http://localhost:4000/api/';
       this.url + 'removeMovie/'+idMovie
     ).pipe(map(res => res));
   }
+  
+  searchMovieByGender(gender){
+    console.log("----------------------------------->", gender)
+    return this._http.get(
+      this.url + '/getMovieByGender/'+gender,
+    ).pipe(map(res => res));
+  }
 
   getMovie(idMovie) {
     return this._http.get(
       this.url + 'movie/' + idMovie
     ).pipe(map(res => res));
   }
-
 }
