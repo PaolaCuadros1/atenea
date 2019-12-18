@@ -43,4 +43,11 @@ url = 'http://localhost:4000/api/';
     ).pipe(map(res => res));
   }
 
+  //Nueva línea 17/12
+  searchMovieByGender(gender){
+    console.log("----------------------------------->", gender)
+    return this._http.get(
+      this.url + '/getMovieByGender/'+gender,
+    ).pipe(map(res => res));
+  }
 }
