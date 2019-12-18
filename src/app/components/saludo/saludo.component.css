@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.containersaludo{
+    display: inline-flex;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.imgusuario {
+    margin-top: -15px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.saludo{
+    margin-left: 100px;
+}
