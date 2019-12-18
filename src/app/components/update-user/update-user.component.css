@@ -2,3 +2,7 @@
     background-image: url(../../../assets/images/fondo4.jpeg);
     background-size: cover;
 }
+
+.col-md-6 img{
+    float:right;
+}
