@@ -23,4 +23,8 @@ export class SaludoComponent implements OnInit {
     console.log("-----> Identidad",  this.identidad)
   }
 
+  cerrarSesion(){
+    this._router.navigate(['']);
+  }
+
 }
