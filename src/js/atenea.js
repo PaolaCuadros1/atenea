@@ -68,3 +68,14 @@ function cerrarSesionAdmin() {
   $('.linkLogingAdmin').show();
   localStorage.removeItem("logged");
 }
+
+function addRemoveFavorite(){
+  if ($( "#favorite" ).hasClass( "far" )){
+    $('#favorite').removeClass('far');
+    $('#favorite').addClass('fas');
+  }else{
+    $('#favorite').removeClass('fas');
+    $('#favorite').addClass('far');
+  }
+  
+}
