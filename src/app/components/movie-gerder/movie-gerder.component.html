@@ -10,7 +10,7 @@
             <br>
             <div class="d-flex justify-content-around">
                 <div class="card" style="width: 12rem;" *ngFor="let movie of genderRomance; let i = index;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="/assets/movies/{{movie.name}}.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{movie.name}}</h5>
                         <p class="card-text">{{movie.synopsis}}
@@ -28,7 +28,7 @@
             <br>
             <div class="d-flex justify-content-around">
                 <div class="card" style="width: 12rem;" *ngFor="let movie of genderComedia; let i = index;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="/assets/movies/{{movie.name}}.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{movie.name}}</h5>
                         <p class="card-text">{{movie.synopsis}}
@@ -47,7 +47,7 @@
             <br>
             <div class="d-flex justify-content-around">
                 <div class="card" style="width: 12rem;" *ngFor="let movie of genderDrama; let i = index;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="/assets/movies/{{movie.name}}.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{movie.name}}</h5>
                         <p class="card-text">{{movie.synopsis}}
@@ -66,7 +66,7 @@
             <br>
             <div class="d-flex justify-content-around">
                 <div class="card" style="width: 12rem;" *ngFor="let movie of genderAnime; let i = index;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="/assets/movies/{{movie.name}}.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{movie.name}}</h5>
                         <p class="card-text">{{movie.synopsis}}
@@ -85,7 +85,7 @@
             <br>
             <div class="d-flex justify-content-around">
                 <div class="card" style="width: 12rem;" *ngFor="let movie of genderAccion; let i = index;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="/assets/movies/{{movie.name}}.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{movie.name}}</h5>
                         <p class="card-text">{{movie.synopsis}}
@@ -104,7 +104,7 @@
             <br>
             <div class="d-flex justify-content-around">
                 <div class="card" style="width: 12rem;" *ngFor="let movie of genderDocumental; let i = index;">
-                    <img class="card-img-top" src="/assets/images/mujer_maravilla.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="/assets/movies/{{movie.name}}.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{movie.name}}</h5>
                         <p class="card-text">{{movie.synopsis}}
