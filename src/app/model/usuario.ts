@@ -7,6 +7,7 @@ export class Usuario {
         public correo: String,
         public contrasena: String,
         public generos: Array<String>,
+        public favoriteMovies: Array<String>,
         public rol: String,
         public imagen: String
       

@@ -18,7 +18,7 @@ export class SignUpComponent implements OnInit {
   ) {
     let allGenders = [ 'Romance', 'Comedia', 'Drama', 'Anime', 'Acción', 'Documentales'];
     this.genders = allGenders;
-    this.usuarioRegistro = new Usuario('', '', '', '', '', [], '', '');
+    this.usuarioRegistro = new Usuario('', '', '', '', '', [], [], '', '');
     this.gendersSaved = [];
   }
 
@@ -34,7 +34,7 @@ export class SignUpComponent implements OnInit {
           alert("Error al registrarse");
         }else{
           alert(`Por favor, ingresa con ${this.usuarioRegistro.correo}`);
-          this.usuarioRegistro = new Usuario('', '', '', '', '', [], '', '');
+          this.usuarioRegistro = new Usuario('', '', '', '', '', [], [], '', '');
           this._router.navigate(['/login']) // wait!!
         }
       },

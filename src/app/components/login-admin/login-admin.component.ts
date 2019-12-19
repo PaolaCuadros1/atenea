@@ -15,7 +15,7 @@ export class LoginAdminComponent implements OnInit {
     private _router: Router, //Cambio Cris
     private usuarioService: UserService
   ) { 
-    this.login = new Usuario('', '', '', '', '', [], 'ROLE_USER', '');
+    this.login = new Usuario('', '', '', '', '', [], [], 'ROLE_USER', '');
   }
 
   ngOnInit() {
@@ -34,6 +34,7 @@ export class LoginAdminComponent implements OnInit {
           this.login.correo,
           this.login.contrasena,
           this.login.generos,
+          this.login.favoriteMovies,
           this.login.rol,
           this.login.imagen
         )
