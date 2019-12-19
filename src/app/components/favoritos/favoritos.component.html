@@ -89,9 +89,7 @@
           <div class="row">
             <div *ngFor="let movie of movies" class="col-sm-12 col-md-4">
               <div class="card mb-2">
-                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                  alt="Card image cap" />
+                  <img class="card-img-top" src="/assets/movies/{{movie.name}}.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title">{{movie.name}}</h4>
                   <p class="card-text">

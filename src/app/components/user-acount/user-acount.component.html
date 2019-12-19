@@ -62,7 +62,7 @@
       <div class="card" *ngFor="let movie of movies">
         <div class="box">
           <div class="img">
-            <img src="./../../../assets/images/cuenta/Escolta 2.jpg">
+            <img class="card-img-top" src="/assets/movies/{{movie.name}}.jpg" alt="Card image cap">
           </div>
           <h2>{{movie.name}}<br><br><span>{{movie.gender}}</span></h2>
           <p style="text-overflow: ellipsis; height: 100px;  overflow: hidden;"  >{{movie.synopsis}}</p>
