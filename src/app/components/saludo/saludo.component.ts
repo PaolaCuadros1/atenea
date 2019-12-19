@@ -20,7 +20,10 @@ export class SaludoComponent implements OnInit {
 
   ngOnInit() {
     this.identidad = this.usuarioService.obtenerNombreUsuario();
-    console.log("-----> Identidad",  this.identidad)
+  }
+
+  cerrarSesion(){
+    this._router.navigate(['']);
   }
 
 }
