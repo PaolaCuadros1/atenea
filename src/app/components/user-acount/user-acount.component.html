@@ -2,111 +2,73 @@
 
 <div class="componente">
 
-<section class="user-acount">
+  <section class="user-acount">
 
-  <ul class="slider-portada" id="inicio">
-    <li>
-      <input type="radio" id="sbutton2" name="sradio" checked>
-      <label for="sbutton2"></label>
-      <img src="./../../../assets/images/cuenta/banner1.png" alt="estreno1" class="responsive" width="100%"
-        height="465px">
-    </li>
+    <ul class="slider-portada" id="inicio">
+      <li>
+        <input type="radio" id="sbutton2" name="sradio" checked>
+        <label for="sbutton2"></label>
+        <img src="./../../../assets/images/cuenta/banner1.png" alt="estreno1" class="responsive" width="100%"
+          height="465px">
+      </li>
 
-    <li>
-      <input type="radio" id="sbutton3" name="sradio">
-      <label for="sbutton3"></label>
-      <img src="./../../../assets/images/cuenta/banner2.png" alt="estereno2" class="responsive" width="100%"
-        height="465">
+      <li>
+        <input type="radio" id="sbutton3" name="sradio">
+        <label for="sbutton3"></label>
+        <img src="./../../../assets/images/cuenta/banner2.png" alt="estereno2" class="responsive" width="100%"
+          height="465">
 
-    </li>
+      </li>
 
-    <li>
-      <input type="radio" id="sbutton4" name="sradio">
-      <label for="sbutton4"></label>
-      <img src="./../../../assets/images/cuenta/banner3.png" alt="estreno3" class="responsive" width="100%"
-        height="465">
+      <li>
+        <input type="radio" id="sbutton4" name="sradio">
+        <label for="sbutton4"></label>
+        <img src="./../../../assets/images/cuenta/banner3.png" alt="estreno3" class="responsive" width="100%"
+          height="465">
 
-    </li>
+      </li>
 
-    <li>
-      <input type="radio" id="sbutton5" name="sradio">
-      <label for="sbutton5"></label>
-      <img src="./../../../assets/images/cuenta/banner4.png" alt="estreno4" class="responsive" width="100%"
-        height="465">
-    </li>
-  </ul>
-
-
-</section>
+      <li>
+        <input type="radio" id="sbutton5" name="sradio">
+        <label for="sbutton5"></label>
+        <img src="./../../../assets/images/cuenta/banner4.png" alt="estreno4" class="responsive" width="100%"
+          height="465">
+      </li>
+    </ul>
 
 
-<section class="user-acount-generos">
-  <div class="row">
-    <div *ngFor="let gender of identidad.generos; let i = index;">
+  </section>
+
+
+  <section class="user-acount-generos">
+    <div class="row">
+      <div *ngFor="let gender of identidad.generos; let i = index;">
       <a class="waves-effect waves-light boton-user-acount" routerLink="/movie-gender">{{gender}}</a>
     </div>
-    <!--<div><a class="waves-effect waves-light boton-user-acount" href="">ROMANCE</a></div>
-    <div><a class="waves-effect waves-light boton-user-acount" href="">DRAMA</a></div>
-    <div><a class="waves-effect waves-light boton-user-acount" href="">COMEDIA</a></div>
-    <div><a class="waves-effect waves-light boton-user-acount" href="">ANIME</a></div>-->
-  </div>
-</section>
+    </div>
+  </section>
 
-<br><br><br>
+  <br><br><br>
 
-<section class="misfavoritos">
-  <br><br><br><br><br><br><br>
-  <h2 style="text-align: center;"> <strong>ALGUNAS DE TUS PELIS FAVORITAS </strong> </h2>
-  <br>
-  <p style="font-size: 20px; text-align: center;">Explora tu listado de películas favoritos. Recomienda, comparte, disfruta, repite, maratonea</p>
+  <section class="misfavoritos">
+    <br><br><br><br><br><br><br>
+    <h2 style="text-align: center;"> <strong>ALGUNAS DE TUS PELIS FAVORITAS </strong> </h2>
     <br>
-  <div class="our-webcoderskull">
+    <p style="font-size: 20px; text-align: center;">Explora tu listado de películas favoritos. Recomienda, comparte,
+      disfruta, repite, maratonea</p>
+    <br>
+    <div class="our-webcoderskull">
 
-   <div class="card">
-      <div class="box">
-        <div class="img">
-          <img src="./../../../assets/images/cuenta/Escolta 2.jpg">
+      <div class="card" *ngFor="let movie of movies">
+        <div class="box">
+          <div class="img">
+            <img src="./../../../assets/images/cuenta/Escolta 2.jpg">
+          </div>
+          <h2>{{movie.name}}<br><br><span>{{movie.gender}}</span></h2>
+          <p style="text-overflow: ellipsis; height: 100px;  overflow: hidden;"  >{{movie.synopsis}}</p>
         </div>
-        <h2>TITULO DE LA PELICULA<br><br><span>GENERO ACCIÓN</span></h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et.</p>
       </div>
     </div>
-
-    <div class="card">
-      <div class="box">
-        <div class="img">
-          <img src="./../../../assets/images/cuenta/Escolta 2.jpg">
-        </div>
-        <h2>TITULO DE LA PELICULA<br><br><span>GENERO ACCIÓN</span></h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="box">
-        <div class="img">
-          <img src="./../../../assets/images/cuenta/Escolta 2.jpg">
-        </div>
-        <h2>TITULO DE LA PELICULA<br><br><span>GENERO ACCIÓN</span></h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="box">
-        <div class="img">
-          <img src="./../../../assets/images/cuenta/Escolta 2.jpg">
-        </div>
-        <h2>TITULO DE LA PELICULA<br><br><span>GENERO ACCIÓN</span></h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et.</p>
-      </div>
-    </div>
-
-  </div>
-  <br><br><br><br>
-</section>
+    <br><br><br><br>
+  </section>
 </div>

@@ -92,5 +92,32 @@ export class UserService {
     return this.identidad;
   }
 
+  agregarAFavoritos(IdPelicula, IdUsuario) {
+    console.log('agregarAFavoritos ', IdPelicula + ' <-> ' + IdUsuario);
+    return this._http.post(
+      `${this.url}/addToFavorites/${IdPelicula}/${IdUsuario}`,
+      {}
+    ).pipe(map(res => res));
+  }
+
+  removerDeFavoritos(IdPelicula, IdUsuario) {
+    console.log('removerDeFavoritos ', IdPelicula + ' <-> ' + IdUsuario);
+    return this._http.delete(
+      `${this.url}/removeFromFavorites/${IdPelicula}/${IdUsuario}`,
+      {}
+    ).pipe(map(res => res));
+  }
+
+  revisarSiEsFavorita(IdPelicula, IdUsuario) {
+    return this._http.get(
+      `${this.url}/checkIfMovieIsFavorite/${IdPelicula}/${IdUsuario}`
+    ).pipe(map(res => res));
+  }
+
+  cargarFavoritas(IdUsuario) {
+    return this._http.get(
+      `${this.url}favorites/${IdUsuario}`
+    ).pipe(map(res => res));
+  }
 }
 

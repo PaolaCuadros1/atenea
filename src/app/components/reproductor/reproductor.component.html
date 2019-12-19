@@ -22,7 +22,16 @@
   <div class="row">
     <div class="col-12 my-1 px-4 d-flex align-items-center justify-content-between">
       <a routerLink="/movieList" class="btn btn-warning"><i class="fas fa-arrow-left"></i> Regresar</a>
-      <a  onclick="addRemoveFavorite();" ><i id="favorite" class="far fa-heart" style="font-size: 30px; color: red; cursor: pointer;"></i></a>
+      <div>
+        <a *ngIf="isFavorite; else isNotFavorite" (click)="removeFromFavorites()" title="Remover de Favoritos">
+          <i id="remove-favorite" class="fas fa-heart" style="font-size: 30px; color: red; cursor: pointer;"></i>
+        </a>
+        <ng-template #isNotFavorite>
+          <a (click)="addToFavorites()" title="Agregar a Favoritos">
+            <i id="add-favorite" class="far fa-heart" style="font-size: 30px; color: white; cursor: pointer;"></i>
+          </a>
+        </ng-template>
+      </div>
     </div>
   </div>
 </div>
