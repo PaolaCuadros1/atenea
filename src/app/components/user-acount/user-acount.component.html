@@ -42,10 +42,13 @@
 
 <section class="user-acount-generos">
   <div class="row">
-    <div><a class="waves-effect waves-light boton-user-acount" href="">ROMANCE</a></div>
+    <div *ngFor="let gender of identidad.generos; let i = index;">
+      <a class="waves-effect waves-light boton-user-acount" routerLink="/movie-gender">{{gender}}</a>
+    </div>
+    <!--<div><a class="waves-effect waves-light boton-user-acount" href="">ROMANCE</a></div>
     <div><a class="waves-effect waves-light boton-user-acount" href="">DRAMA</a></div>
     <div><a class="waves-effect waves-light boton-user-acount" href="">COMEDIA</a></div>
-    <div><a class="waves-effect waves-light boton-user-acount" href="">ANIME</a></div>
+    <div><a class="waves-effect waves-light boton-user-acount" href="">ANIME</a></div>-->
   </div>
 </section>
 
