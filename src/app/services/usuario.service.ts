@@ -110,7 +110,7 @@ export class UserService {
 
   revisarSiEsFavorita(IdPelicula, IdUsuario) {
     return this._http.get(
-      `${this.url}/checkIfMovieIsFavorite/${IdPelicula}/${IdUsuario}`
+      `${this.url}checkIfMovieIsFavorite/${IdPelicula}/${IdUsuario}`
     ).pipe(map(res => res));
   }
 

@@ -12,6 +12,7 @@ import { Usuario } from '../../model/usuario'
 export class UserAcountComponent implements OnInit {
   movies = [];
   user = { _id: null };
+  options = {fullWidth: true, indicators: true};
   public identidad;
   constructor(private UserService: UserService) { }
 
