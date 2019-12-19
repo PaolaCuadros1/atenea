@@ -38,3 +38,16 @@
 .boton{
   justify-content: end;
 }
+
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  height: 210px;
+}
