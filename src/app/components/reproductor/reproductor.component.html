@@ -1,9 +1,10 @@
 <app-saludo></app-saludo>
-<div class="container mx-auto" style="width: 80%;">
+<div class="container mx-auto" style="width: 80%; margin-bottom: 15%;">
   <div class="row">
     <div class="col-12 d-flex justify-content-center align-items-center">
       <div class="position-relative" style="width: 100%; height: 500px; cursor: pointer;">
-        <div id="sipnosis-movie" class="position-absolute text-light p-5 w-100 h-100" style="top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.8);" onclick="play(event)" title="Reproducir">
+        <div id="sipnosis-movie" class="position-absolute text-light p-5 w-100 h-100"
+          style="top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.8);" onclick="play(event)" title="Reproducir">
           <h1 class="mb-0">{{movie.name}}</h1>
           <span class="text-muted">{{movie.duration}}</span>
 
@@ -22,10 +23,11 @@
 
   <div class="row">
     <div class="col-12 my-1 px-4 d-flex align-items-center justify-content-between">
-      <a routerLink="/movieList" class="btn btn-warning"><i class="fas fa-arrow-left"></i> Regresar</a>
+      <a routerLink="/movie-gender" class="btn btn-light" style="color: black !important;"><i
+          class="fas fa-arrow-left"></i> Regresar</a>
       <div>
         <a *ngIf="isFavorite; else isNotFavorite" (click)="removeFromFavorites()" title="Remover de Favoritos">
-          <i id="remove-favorite" class="fas fa-heart" style="font-size: 30px; color: red; cursor: pointer;"></i>
+          <i id="remove-favorite" class="fas fa-heart" style="font-size: 30px; color: pink; cursor: pointer;"></i>
         </a>
         <ng-template #isNotFavorite>
           <a (click)="addToFavorites()" title="Agregar a Favoritos">
