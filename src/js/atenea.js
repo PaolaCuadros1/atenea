@@ -1,3 +1,13 @@
+$(function () {
+  var sesion = localStorage.getItem("logged")
+    if (sesion === "User") {
+      logged();
+    }else if (sesion === "Admin") {
+      printMenuAdmin();
+    }
+})
+
+
 function validateEmptyData() {
 
   if ($('#nombre').val() == '' || $('#apellido').val() == '' || $('#correo').val() == '' || $('#contrasena').val() == '') {
@@ -17,19 +27,20 @@ function validateEmptyData() {
 
 }
 
-function logged(){
+function logged() {
   $('.notLoggedIn').hide();
   $('.logged').show();
-   $('.redes').hide();
-  
+  $('.redes').hide();
+  localStorage.setItem("logged", "User");
 }
 
-function cerrarSesion(){
+function cerrarSesion() {
   $('.notLoggedIn').show();
   $('.logged').hide();
   localStorage.removeItem('sesion');
   localStorage.clear();
-   $('.redes').show();
+  $('.redes').show();
+  localStorage.removeItem("logged");
 }
 
 function play(e) {
@@ -40,4 +51,20 @@ function play(e) {
   if (video && video.src) {
     video.src += '?autoplay=1';
   }
+}
+
+function printMenuAdmin() {
+  $('.adminLoged').show();
+  $('.notLoggedIn').hide();
+  $('.logged').hide();
+  $('.linkLogingAdmin').hide();
+  localStorage.setItem("logged", "Admin");
+}
+
+function cerrarSesionAdmin() {
+  $('.adminLoged').hide();
+  $('.notLoggedIn').show();
+  //$('.logged').show();
+  $('.linkLogingAdmin').show();
+  localStorage.removeItem("logged");
 }

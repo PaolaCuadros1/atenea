@@ -1,11 +1,6 @@
 <div class="menu">
-  <a  title="logo-atenea-2" href=""
-    ><img
-      class="logo"
-      src="../../../assets/images/logo-atenea-2.png"
-      alt="logo-atenea-2"
-      height="100px" 
-  /></a>
+  <a title="logo-atenea-2" href=""><img class="logo" src="../../../assets/images/logo-atenea-2.png" alt="logo-atenea-2"
+      height="100px" /></a>
   <ul class="name-menu">
     <li class="notLoggedIn">
       <a class="nav-link name-menu login" routerLink="/login">
@@ -15,6 +10,11 @@
     <li class="notLoggedIn">
       <a class="nav-link name-menu sign-up" routerLink="/sign-up">
         Registrarse
+      </a>
+    </li>
+    <li class="logged">
+      <a class="nav-link name-menu sign-up" routerLink="/userAcount">
+        Mis favoritos
       </a>
     </li>
     <li class="logged">
@@ -28,8 +28,24 @@
       </a>
     </li>
     <li class="logged">
-      <a class="nav-link name-menu sign-up" routerLink="/movie-gender" onclick="cerrarSesion()" (click)="cerrarSesion()" >
+      <a class="nav-link name-menu sign-up" routerLink="/movie-gender" onclick="cerrarSesion()"
+        (click)="cerrarSesion()">
         cerrar sesión
+      </a>
+    </li>
+    <li class="adminLoged">
+      <a class="nav-link name-menu sign-up" routerLink="/movieList">
+        Lista peliculas
+      </a>
+    </li>
+    <li class="adminLoged">
+      <a class="nav-link name-menu sign-up" routerLink="/register-movie">
+        Registrar peliculas
+      </a>
+    </li>
+    <li class="adminLoged">
+      <a class="nav-link name-menu sign-up" routerLink="/" onclick="cerrarSesionAdmin();" >
+        Cerrar sesión
       </a>
     </li>
   </ul>
