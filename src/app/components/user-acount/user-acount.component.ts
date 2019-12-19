@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as M from '../../../assets/materialize/js/materialize.js';
 import { UserService } from "../../services/usuario.service";
+import { Usuario } from '../../model/usuario'
 
 @Component({
   selector: 'app-user-acount',
@@ -11,12 +12,15 @@ import { UserService } from "../../services/usuario.service";
 export class UserAcountComponent implements OnInit {
   movies = [];
   user = { _id: null };
-
+  public identidad;
   constructor(private UserService: UserService) { }
 
   async ngOnInit() {
     this.user = await this.UserService.obtenerNombreUsuario();
     this.loadMovies();
+    var elems = document.querySelectorAll('.carousel');
+    var instance = M.Carousel.init(elems, this.options);
+    this.identidad = this.UserService.obtenerNombreUsuario();
   }
 
   loadMovies() {
