@@ -398,3 +398,7 @@ a {
 .logged{
   display: none;
 }
+
+.adminLoged{
+  display: none;
+}
